@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "terraform_s3_bucket" {
   }
 }
 
-resource "aws_dynamodb_table" "terraform_state_dbtable" {
+resource "aws_dynamodb_table" "terraform_lock_table" {
   name           = "Terraform State file Table"
   billing_mode   = "PAY_PER_REQUEST"
 #   read_capacity  = 20
@@ -24,7 +24,7 @@ resource "aws_dynamodb_table" "terraform_state_dbtable" {
     Name        = "dynamodb-table-terraform"
     Environment = "development"
   }
-  
+
 }
 
 #   attribute {
