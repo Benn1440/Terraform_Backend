@@ -23,3 +23,10 @@ You can set up a backend.tf file for different backends like AWS S3, Terraform C
 I would be setting up one with AWS s3 for this project.<br>
 
 <img width="1113" alt="Screenshot 2024-07-29 at 23 11 33" src="https://github.com/user-attachments/assets/0f96bd22-9e4b-41a1-8c79-cfd354a21cca">
+
+# Terraform Lock State
+
+Using DynamoDB for Terraform state locking ensures that only one process can modify the state file at a time, preventing conflicts and corruption. Here’s a detailed guide on how to set up a DynamoDB table for Terraform state locking.<br>
+This would allow multiple developers to work on the same Terraform project hosted on any Version Control platform.<be>
+
+<img width="983" alt="Screenshot 2024-07-29 at 23 27 54" src="https://github.com/user-attachments/assets/65369ac7-6bd5-4fad-b6b6-7789937b8a1e">
