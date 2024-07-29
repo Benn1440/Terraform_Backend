@@ -1,5 +1,5 @@
-resource "aws_s3_bucket" "terraform_s3_bucket" {
-  bucket = "terraform_s3_bucket"
+resource "aws_s3_bucket" "bigben-bucket" {
+  bucket = "terraform-bigben-bucket"
 
   tags = {
     Name        = "Terraform bucket"
@@ -7,16 +7,16 @@ resource "aws_s3_bucket" "terraform_s3_bucket" {
   }
 }
 
-resource "aws_dynamodb_table" "terraform_lock_table" {
-  name           = "Terraform State file Table"
+resource "aws_dynamodb_table" "terraform-lock-table" {
+  name           = "Terraform-lock-file-Table"
   billing_mode   = "PAY_PER_REQUEST"
 #   read_capacity  = 20
 #   write_capacity = 20
-  hash_key       = "UserId"
+  hash_key       = "LockID"
   
 
   attribute {
-    name = "UserId"
+    name = "LockID"
     type = "S"
   }
 
