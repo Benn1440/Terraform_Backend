@@ -30,13 +30,19 @@ Using DynamoDB for Terraform state locking ensures that only one process can mod
 This would allow multiple developers to work on the same Terraform project hosted on any Version Control platform.<br>
 
 
-<img width="598" alt="Screenshot 2024-07-30 at 00 48 12" src="https://github.com/user-attachments/assets/f1873a4c-d1aa-410a-8758-1fb5ca0842b6"><br>
+# Terrafor apply --auto-approve
 
+<img width="598" alt="Screenshot 2024-07-30 at 00 48 12" src="https://github.com/user-attachments/assets/f1873a4c-d1aa-410a-8758-1fb5ca0842b6"><br>
 
 <img width="862" alt="Screenshot 2024-07-30 at 00 52 09" src="https://github.com/user-attachments/assets/ab5ea929-3e7c-4e8e-8e96-64ca1a24a57e"><br>
 
-# Terrafor apply --auto-approve
+# S3 Bucket Resource
+<img width="1377" alt="Screenshot 2024-07-30 at 00 59 32" src="https://github.com/user-attachments/assets/c4edae56-4827-4da0-8fb5-00ee985dd337">
 
+# DynamoDB Resource for Lock
 <img width="1373" alt="Screenshot 2024-07-30 at 00 36 10" src="https://github.com/user-attachments/assets/db230306-2b5d-4ae3-a09f-016b952973ea"><br>
+
+
+
 
 
