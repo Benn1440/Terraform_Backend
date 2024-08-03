@@ -3,7 +3,7 @@ terraform {
     bucket = "terraform-bigben-bucket"
     dynamodb_table = "Terraform-lock-file-Table"
     encrypt = true
-    key = "~/.ssh/devopskey.pub"
+    key = "aws-terraform/envs/development"
     region = "eu-west-1"
   }
 }
